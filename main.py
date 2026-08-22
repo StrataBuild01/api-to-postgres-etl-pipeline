@@ -7,7 +7,7 @@ url = "https://jsonplaceholder.typicode.com/users"
 #Extract the API data
 response = requests.get(url)
 data = response.json()
-print(response.status_code)
+print("API request status:", response.status_code)
 
 #Transform the API data and get only the fields we need
 
@@ -21,6 +21,7 @@ for user in data:
         "city": user["address"]["city"]
     }
     users.append(user_data)
+
 
 
 #Convert the transformed data into a Pandas DataFrame
