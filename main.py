@@ -32,6 +32,8 @@ print(df)
 df.to_csv("users.csv", index=False)
 
 
+#Create the database version of the CSV file gotten from the API data using PosrgreSQL
+
 
 
 
